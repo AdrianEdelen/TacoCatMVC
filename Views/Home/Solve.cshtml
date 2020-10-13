@@ -1,0 +1,25 @@
+﻿<h1>The solve Page</h1>
+
+<form asp-action="Solve">
+	<div class="row">
+		<div class="col">
+			<input type="text"name="theWord"/>
+		</div>
+		<div class="col">
+			<input type="text" name="anotherWord" />
+		</div>
+		<div class="col"><button class="btn btn-secondary" type="submit" name="theWord" id="aButton">A button</button></div>
+	</div>
+</form>	
+
+<hr />
+<div class="row">
+	<div class="col">
+		<h2>Results Below</h2>
+		<p>@ViewData["BothPal"]</p>
+		<p>@ViewData["FirstPal"]</p>
+		<p>@ViewData["SecondPal"]</p>
+		<p>@ViewData["NoPal"]</p>
+	</div>
+
+</div>
